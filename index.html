@@ -5,10 +5,35 @@
         <title>Technocrats Robotics | Blog</title>
         <link rel="stylesheet" href="style.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script>
+            function greenGradient() {
+                    document.getElementById("segmentHolder").style.background = "linear-gradient(rgba(0,0,0,0.2),rgba(79,255,56,0.3))";
+                
+            }
+
+            function stopgreenGradient() {
+                    document.getElementById("segmentHolder").style.background = "none";
+
+            }
+        </script>
     </head>
     <body>
+        <div class="topHolder">
         <img src="tclogo.png" class="tclogo" />
         <h1 class="whiteHeading">Technocrats Robotics Blog</h1>
-        <img src="double-down-arrow.png" class="downwardArrow" />
+        <img src="double-down-arrow.png" class="downwardArrow" onclick="window.scrollTo(0,200);" />
+        <br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br />
+        <div id="segmentHolder"><hr /><p class="borderText">BLOG POSTS</p><hr /></div>
+        </div>
+        <div class="bottomHolder" onmouseover="greenGradient();" onmouseleave="stopgreenGradient();">
+            <br /><br /><br /><br /><br />
+            <div class="blogPostHolder">
+            <p class="blogpostText">
+                Hello&comma; this is a test blog post&period; This in turn will be replaced by original blog posts fetched dynamically from the database&period; 
+            </p>
+        </div>
+        <br /><br /><br /><br /><br />
+        </div>
     </body>
 </html>

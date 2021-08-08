@@ -1,11 +1,26 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
-    background: url(bg.jpg);
     margin: 0px;
     padding: 0px;
 }
 
+.topHolder{
+    background: url(bg.jpg);
+    text-align: center;
+    margin: 0px;
+}
+
+.bottomHolder{
+    background: #000000;
+    text-align: center;
+    margin: 0px;
+}
+
 .tclogo{
-    display: block;
+    display: inline-block;
     margin: auto;
     margin-top: 7.5%;
     height: 420px;
@@ -20,12 +35,44 @@ body{
     font-size: 50px;
 }
 
+.borderText{
+    display: inline-block;
+    color: #ffffff;
+    margin: 7px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+hr{
+    width: 47.2%;
+    display: inline-block;
+    height: 1px;
+    background-color: #474747;
+    border: 0px;
+    margin: 0px;
+}
+
 .downwardArrow{
     display: block;
     margin: auto;
     width: 60px;
     height: 60px;
     animation: downwardArrowAnimation 2s linear 0s infinite;
+}
+
+.blogPostHolder{
+    display: inline-block;
+    height: auto;
+    width: 25%;
+    text-align: center;
+    color: #ffffff;
+    border: 1px solid #aaaaaa;
+    margin: 0px;
+    padding: 0px;
+    transform: rotateZ(5deg);
+}
+
+.blogpostText{
+    display: inline-block;
 }
 
 @keyframes downwardArrowAnimation {
