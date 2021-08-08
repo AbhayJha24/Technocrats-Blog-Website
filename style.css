@@ -1,0 +1,43 @@
+body{
+    background: url(bg.jpg);
+    margin: 0px;
+    padding: 0px;
+}
+
+.tclogo{
+    display: block;
+    margin: auto;
+    margin-top: 7.5%;
+    height: 420px;
+    width: 420px;
+    animation: borderRotator 5s linear 0s infinite;
+}
+
+.whiteHeading{
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+}
+
+.downwardArrow{
+    display: block;
+    margin: auto;
+    width: 60px;
+    height: 60px;
+    animation: downwardArrowAnimation 2s linear 0s infinite;
+}
+
+@keyframes downwardArrowAnimation {
+    0% {transform: translate(0px,-10px);}
+    50% {transform: translate(0px,10px);}
+    100%{transform: translate(0px,-10px);}
+}
+
+@keyframes borderRotator {
+    0% {transform:rotateZ(0deg);}
+    25% {transform: rotateZ(90deg);}
+    50% {transform: rotateZ(180deg);}
+    75% {transform: rotateZ(270deg);}
+    100% {transform: rotateZ(360deg);}
+  }
