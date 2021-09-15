@@ -1,0 +1,1 @@
+CREATE TABLE posts(ts timestamp PRIMARY KEY, name varchar(20), post varchar(10000));

@@ -14,7 +14,7 @@ body{
 }
 
 .bottomHolder{
-    background: #000000;
+    background: linear-gradient(#000000, #292929);
     text-align: center;
     margin: 0px;
 }
@@ -67,12 +67,28 @@ hr{
     color: #ffffff;
     border: 1px solid #aaaaaa;
     margin: 0px;
-    padding: 0px;
-    transform: rotateZ(5deg);
+    padding: 10px;
+    border-radius: 10px;
 }
 
 .blogpostText{
     display: inline-block;
+}
+
+.blogpostDate{
+    float: right;
+}
+
+.textar{
+    border-radius: 10px;
+}
+
+input{
+    border-radius: 10px;
+}
+
+.blogpostWriterName{
+    color: #00a516;
 }
 
 @keyframes downwardArrowAnimation {
